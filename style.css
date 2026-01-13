@@ -1,16 +1,16 @@
-<!--GENERAL STYLES FOR ALL PAGES-->
-
+/* GENERAL STYLES FOR ALL PAGES */
 body {
   display: flex;
   flex-direction: column; /* stack content vertically */
   justify-content: center; /* vertical center */
-  align-items: center; /* horizontal center */
+  align-items: center;     /* horizontal center */
   height: 100vh;
   margin: 0;
   background: pink;
   font-family: "Chalkboard SE", "Comic Sans MS", sans-serif;
   text-align: center;
 }
+
 
 h1 {
   font-size: 2.5em;
