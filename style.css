@@ -1,6 +1,5 @@
-/* =========================
-   GENERAL STYLES FOR ALL PAGES
-========================= */
+<!--GENERAL STYLES FOR ALL PAGES-->
+
 body {
   display: flex;
   flex-direction: column; /* stack content vertically */
@@ -9,7 +8,7 @@ body {
   height: 100vh;
   margin: 0;
   background: pink;
-  font-family: 'Comic Sans MS', sans-serif;
+  font-family: "Chalkboard SE", "Comic Sans MS", sans-serif;
   text-align: center;
 }
 
