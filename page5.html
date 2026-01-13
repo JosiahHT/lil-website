@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine - Page 5</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Isabella Christine Sexhaur Paron, will you be my Valentine?</h1>
+
+<div class="buttons">
+  <button id="yes">YES 💖</button>
+  <button id="no">NO 😢</button>
+</div>
+
+<p id="message"></p>
+
+<script>
+let noClicks = 0;
+const yesBtn = document.getElementById('yes');
+const noBtn = document.getElementById('no');
+const message = document.getElementById('message');
+
+noBtn.addEventListener('click', () => {
+  noClicks++;
+  yesBtn.style.transform = `scale(${1 + noClicks*0.15})`;
+  noBtn.style.transform = `scale(${1 - noClicks*0.1})`;
+
+  if(noClicks === 1) message.textContent = "Try again 😏";
+  else if(noClicks === 2) message.textContent = "I thought we were friends 😢";
+  else if(noClicks === 3) message.textContent = "Dont make me sad 😅";
+  else if(noClicks === 4) message.textContent = "You're testing me 😤";
+  else if(noClicks === 5) message.textContent = "This is your last chance 😡";
+  else if(noClicks >= 6) {
+    message.textContent = "Okay fine, the answer is YES 💖";
+    noBtn.style.display = 'none';
+  }
+});
+
+yesBtn.addEventListener('click', () => {
+  message.textContent = "Yay! 💖 I knew you'd say yes!";
+  yesBtn.style.backgroundColor = "#ff1493";
+});
+</script>
+
+</body>
+</html>

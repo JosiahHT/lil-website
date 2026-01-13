@@ -1,0 +1,106 @@
+/* =========================
+   GENERAL STYLES FOR ALL PAGES
+========================= */
+body {
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  height: 100vh;
+  margin: 0;
+  background: pink;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  animation: heartbeat 1.5s infinite;
+}
+
+@keyframes heartbeat {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 1.5em;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.2);
+}
+
+#yes {
+  background-color: #ff69b4;
+  color: white;
+}
+
+#no {
+  background-color: #ccc;
+}
+
+/* =========================
+   PAGE 2 LICENSE PLATE
+========================= */
+#plate {
+  width: 300px;
+  max-width: 80%;
+  margin: 20px auto;
+  display: block;
+  animation: bounce 1s ease;
+}
+
+#plate-text {
+  font-size: 2em;
+  margin-top: 10px;
+  animation: fadeIn 1.5s ease forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+@keyframes bounce {
+  0% { transform: translateY(-50px); }
+  50% { transform: translateY(0); }
+  100% { transform: translateY(-10px); }
+}
+
+/* =========================
+   PAGE 4 TYPING EFFECT
+========================= */
+#typing {
+  border-right: 2px solid black;
+  display: inline;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 1.5em;
+}
+
+/* =========================
+   PAGE 5 YES/NO PRANK
+========================= */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#message {
+  margin-top: 20px;
+  font-size: 1.5em;
+}

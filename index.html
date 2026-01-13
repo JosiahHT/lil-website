@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine - Page 1</title>
+<link rel="stylesheet" href="style.css">
+<style>
+/* Page 1 specific styles */
+body {
+  display: flex;
+  flex-direction: column; /* stack content vertically */
+  justify-content: center; /* vertical center */
+  align-items: center; /* horizontal center */
+  height: 100vh;
+  margin: 0;
+  background: pink;
+  font-family: 'Comic Sans MS', cursive, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+#envelope {
+  font-size: 10em; /* giant emoji */
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+#envelope:hover {
+  transform: scale(1.2); /* fun hover effect */
+}
+
+p {
+  font-size: 1.5em;
+  margin-top: 20px;
+}
+</style>
+</head>
+<body>
+
+<h1>Hey Bella! 💌</h1>
+
+<!-- giant envelope emoji -->
+<div id="envelope">📩</div>
+
+<p>Click the envelope to start the journey!</p>
+
+<script>
+const envelope = document.getElementById('envelope');
+envelope.addEventListener('click', () => {
+  // fun little pop animation
+  envelope.style.transform = "scale(1.5)";
+  setTimeout(() => {
+    window.location.href = 'page2.html'; // go to next page
+  }, 300);
+});
+</script>
+
+</body>
+</html>

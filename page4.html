@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Valentine - Page 4</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="typing"></h1>
+
+<script>
+const text = "Almost there... Are you ready? 💖";
+let i = 0;
+const typing = document.getElementById('typing');
+
+function typeWriter() {
+  if (i < text.length) {
+    typing.innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typeWriter, 100);
+  } else {
+    setTimeout(() => {
+      window.location.href = 'page5.html';
+    }, 1500);
+  }
+}
+typeWriter();
+</script>
+
+</body>
+</html>
