@@ -29,11 +29,11 @@ noBtn.addEventListener('click', () => {
   yesBtn.style.transform = `scale(${1 + noClicks*0.15})`;
   noBtn.style.transform = `scale(${1 - noClicks*0.1})`;
 
-  if(noClicks === 1) message.textContent = "Try again 😏";
+  if(noClicks === 1) message.textContent = "Nuh Uh Try again 😏";
   else if(noClicks === 2) message.textContent = "I thought we were friends 😢";
-  else if(noClicks === 3) message.textContent = "Dont make me sad 😅";
-  else if(noClicks === 4) message.textContent = "You're testing me 😤";
-  else if(noClicks === 5) message.textContent = "This is your last chance 😡";
+  else if(noClicks === 3) message.textContent = "Dont make me sad 😔";
+  else if(noClicks === 4) message.textContent = "Oh so you suck 😤";
+  else if(noClicks === 5) message.textContent = "Last chance biggo 😡";
   else if(noClicks >= 6) {
     message.textContent = "Okay fine, the answer is YES 💖";
     noBtn.style.display = 'none';
@@ -41,7 +41,7 @@ noBtn.addEventListener('click', () => {
 });
 
 yesBtn.addEventListener('click', () => {
-  message.textContent = "Yay! 💖 I knew you'd say yes!";
+  message.textContent = "Yay! 💖 I knew youd say yes!";
   yesBtn.style.backgroundColor = "#ff1493";
 });
 </script>
